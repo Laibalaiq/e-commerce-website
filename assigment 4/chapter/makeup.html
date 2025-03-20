@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Makeup Store</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f3f3f3;
+            color: #333;
+        }
+        header {
+        font-size: 2.5rem;
+        font-weight: bold;
+        font-style: italic;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+            color: rgb(30, 23, 23);
+            text-align: center;
+            padding: 1rem 0;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+        .product {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            width: 200px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .product img {
+            width: 100%;
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+        }
+        .product h3 {
+            font-size: 1rem;
+            margin: 10px 0;
+            color: #6a0dad;
+        }
+        .product button {
+            background-color: #6a0dad;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-bottom: 10px;
+        }
+        .product button:hover {
+            background-color: #5a009d;
+        }
+        @media (max-width: 768px) {
+            .product {
+                width: 45%;
+            }
+        }
+        @media (max-width: 480px) {
+            .product {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <button onclick="window.location.href='index.html'" style="margin: 20px; padding: 10px 20px; color:#396594; border: none; cursor: pointer; position: fixed; left: 20px; top: 20px; background: none; font-size: 1rem;">&#8592; Back to Home</button>
+    <header>
+        <h1>Makeup Store</h1>
+    </header>
+    <div class="container">
+        <!-- Repeat this block for 10 products -->
+        <div class="product">
+            <img src="https://cdn.shopify.com/s/files/1/0518/8717/7910/files/cream_blush_480x480.jpg?v=1713871379" alt="Makeup Product 1">
+            <h3>Product 1</h3>
+            <button>Buy Now</button>
+        </div>
+        <div class="product">
+            <img src="https://i.pinimg.com/736x/cb/96/37/cb9637f3f28e1e0d832cb077725b2bfd.jpg" alt="Makeup Product 2">
+            <h3>Product 2</h3>
+            <button>Buy Now</button>
+        </div>
+        <div class="product">
+            <img src="https://images.squarespace-cdn.com/content/v1/62a98ab3228a337fdf58fe76/9d8b605a-7fba-4633-b285-f5b1e904c4b9/Must+Have+Makeup+Products+For+Your+Makeup+Bag.jpg" alt="Makeup Product 3">
+            <h3>Product 3</h3>
+            <button>Buy Now</button>
+        </div>
+        <div class="product">
+            <img src="https://wwd.com/wp-content/uploads/2024/03/tiktok-beauty-products-benefit-benetint.jpg?w=1000" alt="Makeup Product 4">
+            <h3>Product 4</h3>
+            <button>Buy Now</button>
+        </div>
+        <div class="product">
+            <img src="https://www.lorealparisusa.com/-/media/project/loreal/brand-sites/oap/americas/us/beauty-magazine/2025/feb/banner-makeup-order-for-application-desktop.jpg?cx=0.52&cy=0.49&cw=2000&ch=815&hash=AD5062A4A226A116133421E8EE9FFB91" alt="Makeup Product 5">
+            <h3>Product 5</h3>
+            <button>Buy Now</button>
+        </div>
+        <div class="product">
+            <img src="https://img.buzzfeed.com/store-an-image-prod-us-east-1/DvT3LkUsl.png?output-format=jpg" alt="Makeup Product 6">
+            <h3>Product 6</h3>
+            <button>Buy Now</button>
+        </div>
+        <div class="product">
+            <img src="https://baraq.pk/media/products/images/MT_CosmeticsStore/baraq_product_image_81399ca3-e3f0-4779-a8b9-6e61fae0f269.jpg" alt="Makeup Product 7">
+            <h3>Product 7</h3>
+            <button>Buy Now</button>
+        </div>
+        <div class="product">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyy1HOdmc2hIkvISJ4EcanEZaQxHiXyAeNqQ&s" alt="Makeup Product 8">
+            <h3>Product 8</h3>
+            <button>Buy Now</button>
+        </div>
+        <div class="product">
+            <img src="https://luxurydesires.pk/cdn/shop/files/Makeup.jpg?v=1719380666" alt="Makeup Product 9">
+            <h3>Product 9</h3>
+            <button>Buy Now</button>
+        </div>
+        <div class="product">
+            <img src="https://static.independent.co.uk/s3fs-public/thumbnails/image/2019/05/29/12/organic-makeup-products-0.jpg?width=1200&height=630&fit=crop" alt="Makeup Product 10">
+            <h3>Product 10</h3>
+            <button>Buy Now</button>
+        </div>
+    </div>
+</body>
+</html></div>

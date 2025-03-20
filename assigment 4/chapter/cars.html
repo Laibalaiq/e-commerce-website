@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cars for Sale</title>
+    <style>
+        .card {
+            border: 2px solid var(--primary-color);
+            border-radius: 15px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 15px rgba(106, 13, 173, 0.3);
+        }
+        :root {
+            --primary-color: #6a0dad; /* Purple */
+            --secondary-color: #d3d3d3; /* Light Grey */
+            --text-color: #ffffff; /* White */
+            --hover-color: #4b0082; /* Darker Purple */
+        }
+
+        body {
+            background-color: var(--secondary-color);
+            color: var(--primary-color);
+        }
+
+        .card {
+            border-color: var(--primary-color);
+        }
+
+        .card button {
+            background-color: var(--primary-color);
+            color: var(--text-color);
+        }
+
+        .card button:hover {
+            background-color: var(--hover-color);
+        }
+
+        a {
+            color: var(--primary-color);
+        }
+
+        a:hover {
+            color: var(--hover-color);
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 20px;
+            justify-content: center;
+        }
+        .card {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            overflow: hidden;
+            text-align: center;
+            background-color: #fff;
+        }
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .card h3 {
+            margin: 10px 0;
+        }
+        .card p {
+            color: #555;
+            padding: 0 10px;
+        }
+        .card button {
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            padding: 10px 15px;
+            margin: 10px 0;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .card button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const cards = document.querySelectorAll('.card');
+            cards.forEach(card => {
+                card.addEventListener('click', () => {
+                    const carModel = card.querySelector('h3').textContent;
+                    const carPrice = card.querySelector('p').textContent;
+                    alert(`You selected ${carModel} with ${carPrice}`);
+                });
+            });
+        });
+    </script>
+  <a href="index.html" style="display: inline-block; margin: 20px; text-decoration: none; color: #396594; font-size: 18px;">
+        &#8592; Back to Home
+    </a>
+        </a>
+    </div>
+    <h1 style="text-align: center; padding: 20px;">Cars for Sale</h1>
+    <div class="container">
+        <!-- Repeat this card for 10 cars -->
+        <div class="card">
+            <img src="https://cdn.ferrari.com/cms/network/media/img/resize/5d1f10968a2538547edce275-m-dinamica-2400x4350-040719?width=768&height=1024 alt=">
+            <h3>Car Model 1</h3>
+            <p>Price: $20,000</p>
+            <button>Buy Now</button>
+        </div>
+        <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRemTGKfteQrBe71Z9_eyfA40mzseNiQs6ZGxelu8VYmkc2unES48LHrX89rSzausm3O-Q&usqp=CAU" alt="Car 2">
+            <h3>Car Model 2</h3>
+            <p>Price: $25,000</p>
+            <button>Buy Now</button>
+        </div>
+        <div class="card">
+            <img src="https://cache4.pakwheels.com/system/car_generation_pictures/6076/original/Bugatti_chiron.jpg?1639740765" alt="Car 3">
+            <h3>Car Model 3</h3>
+            <p>Price: $30,000</p>
+            <button>Buy Now</button>
+        </div>
+        <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTG7b-ZdCKE5qjb8XJPwSE1hrOJEcyU0u_4A&s" alt="Car 4">
+            <h3>Car Model 4</h3>
+            <p>Price: $22,000</p>
+            <button>Buy Now</button>
+        </div>
+        <div class="card">
+            <img src="https://imgd.aeplcdn.com/664x374/n/cw/ec/27074/civic-exterior-right-front-three-quarter-148155.jpeg?q=80" alt="Car 5">
+            <h3>Car Model 5</h3>
+            <p>Price: $28,000</p>
+            <button>Buy Now</button>
+        </div>
+        <div class="card">
+            <img src="https://imgcdn.zigwheels.pk/large/gallery/color/13/123/suzuki_mehran_solid_white.jpg" alt="Car 6">
+            <h3>Car Model 6</h3>
+            <p>Price: $35,000</p>
+            <button>Buy Now</button>
+        </div>
+        <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4wGR5IEJGMied19pE9x1E8QOOM9CVT0670A&s" alt="Car 7">
+            <h3>Car Model 7</h3>
+            <p>Price: $18,000</p>
+            <button>Buy Now</button>
+        </div>
+        <div class="card">
+            <img src="https://www.honda.com.pk/images/landingimages/images/brv/BRV.jpg" alt="Car 8">
+            <h3>Car Model 8</h3>
+            <p>Price: $40,000</p>
+            <button>Buy Now</button>
+        </div>
+        <div class="card">
+            <img src="https://autoportal.com/cdn/img/new-cars-gallery/honda/br-v/colors/744c642a5e5cd43a538e8ba4dfbcf815.jpg" alt="Car 9">
+            <h3>Car Model 9</h3>
+            <p>Price: $32,000</p>
+            <button>Buy Now</button>
+        </div>
+        <div class="card">
+            <img src="https://stimg.cardekho.com/images/carexteriorimages/630x420/Honda/Elevate/9533/1686040115808/front-left-side-47.jpg" alt="Car 10">
+            <h3>Car Model 10</h3>
+            <p>Price: $45,000</p>
+            <button>Buy Now</button>
+        </div>
+    </div>
+</body>
+</html></div>

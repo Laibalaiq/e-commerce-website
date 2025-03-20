@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clothes</title>
+</head>
+<body>
+    <h1>Clothes Gallery</h1>
+    <!-- Add your clothes content here -->
+</body>
+</html>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+    }
+    h1 {
+        margin: 20px 0;
+    }
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap:65px;
+        padding: 20px;
+        }
+        .item {
+        text-align: center;
+        }
+        body {
+            background-color: #f3f0f9;
+            color: #4c4c6d;
+        }
+        h1 {
+            color: #6a5acd;
+        }
+        .buy-button {
+            background-color: #6a5acd;
+            color: white;
+        }
+        .buy-button:hover {
+            background-color: #483d8b;
+        }
+        .gallery img {
+            border: 2px solid #6a5acd;
+        }
+        .gallery img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .gallery img:hover {
+        transform: scale(1.05);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+        }
+    .buy-button {
+        margin-top: 10px;
+        padding: 8px 12px;
+        background-color: #4c584f;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    .buy-button:hover {
+        background-color: #218838;
+    }
+</style>
+<button onclick="window.location.href='index.html'" style="margin: 20px; padding: 10px 20px; color:#396594; border: none; cursor: pointer; position: absolute; left: 20px; top: 20px;">&#8592; Back to Home</button>
+<div class="gallery">
+    <div class="item">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4pSUJd-Iu4EeyDMji808KWMfK8aXLXJGkwA&s" alt="Shirt 1">
+        <button class="buy-button" onclick="buyNow('Shirt 1')">Buy Now</button>
+    </div>
+    <div class="item">
+        <img src="https://xcdn.next.co.uk/common/items/default/default/itemimages/3_4Ratio/product/lge/Q97348s.jpg?im=Resize,width=750" alt="Shirt 2">
+        <button class="buy-button" onclick="buyNow('Shirt 2')">Buy Now</button>
+    </div>
+    <div class="item">
+        <img src="https://shop.mango.com/assets/rcs/pics/static/T7/fotos/S/77076355_43.jpg?imwidth=2048&imdensity=1&ts=1724344510689" alt="Dress 1">
+        <button class="buy-button" onclick="buyNow('Dress 1')">Buy Now</button>
+    </div>
+    <div class="item">
+        <img src="https://assets-prd.cintas.com/sf-assets/images/default-source/solutions-images/uniforms-apparel/rental-uniforms/work-shirts/blue-carhartt-rugged-flex-work-shirt.jpg?sfvrsn=6c68f5cb_3" alt="Dress 3">
+        <button class="buy-button" onclick="buyNow('Dress 3')">Buy Now</button>
+    </div>
+    <div class="item">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQpmodEsoZtG7pChFMZeSb9_sg-symWeqFiw&s" alt="Dress 4">
+        <button class="buy-button" onclick="buyNow('Dress 4')">Buy Now</button>
+    </div>
+    <div class="item">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFpwRZ1H7Zh-8PLD40Kg1RIgXq4pbFb5jKYA&s" alt="Dress 5">
+        <button class="buy-button" onclick="buyNow('Dress 5')">Buy Now</button>
+    </div>
+    <div class="item">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLPFZUtahgmlC4gmlbuIF0hfnBuOoTgzoM_w&s" alt="Dress 6">
+        <button class="buy-button" onclick="buyNow('Dress 6')">Buy Now</button>
+    </div>
+    <div class="item">
+        <img src="https://kapdavilla.com/images/product/sub_images/2021/02/psyna-poetry-vol-2-designer-cotton-kurti-pents-sets-catalog-at-best-price-3-2021-02-01_14_36_55.jpeg" alt="Dress 7">
+        <button class="buy-button" onclick="buyNow('Dress 7')">Buy Now</button>
+    </div>
+    <div class="item">
+        <img src="https://kapdavilla.com//images/product/2021/09/tc-smylee-fancy-plain-cotton-kurti-new-designs-at-best-rate-2021-09-29_18_47_29.jpeg" alt="Dress 8">
+        <button class="buy-button" onclick="buyNow('Dress 8')">Buy Now</button>
+    </div>
+    <div class="item">
+        <img src="https://textilebuzz.b-cdn.net/image/catalog/24-12-27/dress-wholesaler-surat-bb02926d94ee11c5c758951a62270a27.jpeg" alt="Dress 9">
+        <button class="buy-button" onclick="buyNow('Dress 9')">Buy Now</button>
+    </div>
+    <div class="item">
+        <img src="https://img.fantaskycdn.com/d5907befc8d7d41f3e875757a76e744e_900x.JPG" alt="Dress 10">
+        <button class="buy-button" onclick="buyNow('Dress 10')">Buy Now</button>
+    </div></div>
+   
+   
+  
+</div>
+<script>
+    function buyNow(item) {
+        alert(`You have selected to buy ${item}.`);
+    }
+</script></div>

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Books Page</title>
+    <style>
+      
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+        .card {
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .card h3 {
+            margin: 10px 0;
+            font-size: 18px;
+            color: #333;
+        }
+        body {
+            background-color: #f4f4f4;
+            color: #4a4a4a;
+        }
+        .card {
+            border: 1px solid #6a0dad;
+        }
+        button {
+            background-color: #6a0dad;
+        }
+        button:hover {
+            background-color: #9b59b6;
+        }
+        button {
+            margin: 10px;
+            padding: 10px 20px;
+            background-color: #396594;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button>button:hover {
+            background-color: #71f1f1;
+        }
+        @media (max-width: 768px) {
+            .card img {
+                height: 150px;
+            }
+
+            .card h3 {
+                font-size: 16px;
+            }
+
+            button {
+                padding: 8px 16px;
+                font-size: 14px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                grid-template-columns: 1fr;
+            }
+
+            .card img {
+                height: 120px;
+            }
+
+            .card h3 {
+                font-size: 14px;
+            }
+
+            button {
+                padding: 6px 12px;
+                font-size: 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <a href="index.html" style="display: inline-block; margin: 20px; text-decoration: none; color: #396594; font-size: 18px;">
+        &#8592; Back to Home
+    </a>
+    <h1 style="text-align: center; padding: 20px;">Books Collection</h1>
+    <div class="container">
+        <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSK4Ez4r-Euf99ducUOp67D7HlWWmQz_euPrA&s" alt="Book 1">
+        <h3>Book Title 1</h3>
+        <button style="margin: 10px; padding: 10px 20px; background-color: #396594; color: white; border: none; border-radius: 5px; cursor: pointer;">
+            Add to Cart
+        </button>
+        </div>
+        <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfv9mTq0F8Tbu1gER2D_QSm7twQDIqvKT9Nw&s" alt="Book 2">
+            <button style="margin: 10px; padding: 10px 20px; background-color: #396594; color: white; border: none; border-radius: 5px; cursor: pointer;">
+                Add to Cart
+            </button>
+        </div>
+        <div class="card">
+            <img src="https://m.media-amazon.com/images/I/41AycRWKJRL._SL500_.jpg" alt="Book 3">
+            <button style="margin: 10px; padding: 10px 20px; background-color: #396594; color: white; border: none; border-radius: 5px; cursor: pointer;">
+                Add to Cart
+            </button>
+        </div>
+        <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2kjynQIAHeZXVNwr6hJ3jcUYc8J-MibTWkA&s" alt="Book 4">
+            <button style="margin: 10px; padding: 10px 20px; background-color: #396594; color: white; border: none; border-radius: 5px; cursor: pointer;">
+                Add to Cart
+            </button>
+        </div>
+        <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5kfIWf308B1eT6gLF_gx4AiL5NBJLy1hKhw&s" alt="Book 5">
+            <button style="margin: 10px; padding: 10px 20px; background-color: #396594; color: white; border: none; border-radius: 5px; cursor: pointer;">
+                Add to Cart
+            </button>
+        </div>
+        <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStIsCATJKQscPutvAv4EojNXiM_Nc6j2oxJg&s" alt="Book 6">
+            <button style="margin: 10px; padding: 10px 20px; background-color: #396594; color: white; border: none; border-radius: 5px; cursor: pointer;">
+                Add to Cart
+            </button>
+        </div>
+        <div class="card">
+            <img src="https://duabookpalace.com/cdn/shop/files/400891653_18320423725111524_7471903220194608941_n.jpg?v=1699974633" alt="Book 7">
+            <button style="margin: 10px; padding: 10px 20px; background-color: #396594; color: white; border: none; border-radius: 5px; cursor: pointer;">
+                Add to Cart
+            </button>
+        </div>
+        <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_3BCkzmK19AZ-fzE98H083V7WF2P0s0eI6Q&s" alt="Book 8">
+            <button style="margin: 10px; padding: 10px 20px; background-color: #396594; color: white; border: none; border-radius: 5px; cursor: pointer;">
+                Add to Cart
+            </button>
+        </div>
+        <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYoEZW9iFUudmPIoWNvX-F0rJqBv3SbBb4RQ&s" alt="Book 9">
+            <button style="margin: 10px; padding: 10px 20px; background-color: #396594; color: white; border: none; border-radius: 5px; cursor: pointer;">
+                Add to Cart
+            </button>
+        </div>
+        <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvZOxS_jIXfRsgkJCRM80IzwcKUDyXX0XUHg&s" alt="Book 10">
+            <button style="margin: 10px; padding: 10px 20px; background-color: #396594; color: white; border: none; border-radius: 5px; cursor: pointer;">
+                Add to Cart
+            </button>
+        </div>
+    </div>
+</body>
+</html></div>

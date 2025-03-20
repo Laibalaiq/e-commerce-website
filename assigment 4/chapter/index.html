@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce </title>
+<link rel="stylesheet" href="style.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+/>
+</head>
+<body>
+    <header>
+        <div class="logo">E-Shop</div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#shop">Shop</a>
+            <a href="#about-section">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <div class="hero">
+        <h1>Welcome to E-Shop</h1>
+        <p>Your one-stop shop for all your needs</p>
+        
+    </div>
+    <div class="products " id="shop">
+        <div class="product">
+            <a href="books.html">
+            <img src="https://images.pexels.com/photos/1370295/pexels-photo-1370295.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="Product 1">
+            <h3>books</h3>
+            <p>$10.00</p>
+            <button>CLICK HERE</button></a>
+        </div>
+        <div class="product">
+            <a href="cars.html">
+            <img src="https://www.bosshunting.com.au/wp-content/uploads/2020/03/mclaren-p1-bahrain-300_mk-edit-crop4000x2143-1.jpg" alt="Product 2">
+            <h3>cars</h3>
+            <p>$20.00</p>
+            <button>CLICK HERE</button></a>
+        </div>
+        <div class="product">
+            <a href="mobile.html">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzgSKoQN8ue-fjufTjm-hfQMSMc4m3w-5gcQ&s" alt="Product 3">
+            <h3>mobile</h3>
+       
+            <button>CLICK HERE</button></a>
+        </div>
+        <div class="product">
+            <a href="clothes.html">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyo2pADPj8JRIR4Zc1Vkbo-g2cJqVfsSBNxA&s" alt="Product 4">
+            <h3>clothes</h3>
+          
+            <button>CLICK HERE</button></a>
+        </div>
+        <div class="product">
+            <a href="accessories.html">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScGtnU7IDY7-Q5EkAbZw5SmubVTuZWbWcjvg&s" alt="Product 2">
+            <h3>jewerly</h3>
+           
+            <button>CLICK HERE</button></a>
+        </div>
+        <div class="product">
+            <a href="makeup.html">
+            <img src="https://static.fibre2fashion.com//articleresources/images/71/7074/SAdobeStock_247321133_Small.jpg" alt="Product 2">
+            <h3>makeup</h3>
+            <button>CLICK HERE</button></a>
+    
+        </div>
+    </div>
+    <section id="about-section" class="about">
+        <h2>About Us</h2>
+        <p>Welcome to E-Shop, your trusted online marketplace for a wide range of products. We are committed to providing high-quality items at affordable prices, ensuring a seamless shopping experience for our customers.</p>
+        <p>Our mission is to bring convenience and satisfaction to your shopping journey. Whether you're looking for books, cars, mobile devices, clothes, jewelry, or makeup, we have it all in one place.</p>
+        <p>Thank you for choosing E-Shop. We look forward to serving you!</p>
+    </section>
+   
+    </section>
+<script>
+    document.querySelectorAll('nav a').forEach(link => {
+        link.addEventListener('click', function(event) {
+            const targetId = this.getAttribute('href').substring(1);
+            const targetSection = document.getElementById(targetId);
+            if (targetSection) {
+                event.preventDefault();
+                targetSection.scrollIntoView({ behavior: 'smooth' });
+            }
+        });
+    });
+</script>
+    
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <form action="submit_form.php" method="post">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+    <footer>
+        &copy; 2023 E-Shop. All rights reserved.
+    </footer>
+</body>
+</html>

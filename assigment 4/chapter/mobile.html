@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            background-color: #f4f4f4;
+        }
+       
+.image-container {
+    width: 40%;
+}
+        .image-container {
+            width: 45%;
+            margin: 10px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            padding: 10px;
+        }
+        .image-container img {
+            width: 60%;
+            border-radius: 8px;
+        }
+        .buy-button {
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: #396594;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .buy-button:hover {
+            background-color:#396594
+        }
+    </style>
+</head>
+<body>
+<div style="width: 100%; text-align: center; margin: 20px 0;">
+    <div style="width: 100%; text-align: left; margin: 20px 0;">
+        <button class="buy-button" onclick="window.location.href='index.html'">  &#8592; Back to Home</button>
+    </div>
+</div>
+    <script>
+        function buyNow(item) {
+            alert(`You clicked Buy Now for ${item}`);
+        }
+    </script>
+
+    <div class="image-container">
+        <img src="https://www.winstore.pk/cdn/shop/products/QjLFaeJKbs.jpg?v=1640450153" alt="Item 1">
+        <button class="buy-button" onclick="buyNow('Item 1')">Buy Now</button>
+    </div>
+    
+    <div class="image-container">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKE89eFGnaNuTu6mxjnelKDpkb0x_3q1K1sQ&s" alt="Item 2">
+        <button class="buy-button" onclick="buyNow('Item 2')">Buy Now</button>
+    </div>
+    <div class="image-container">
+        <img src="https://www.winstore.pk/cdn/shop/products/GXMsNxFUt7.jpg?v=1656324132" alt="Item 3">
+        <button class="buy-button" onclick="buyNow('Item 3')">Buy Now</button>
+    </div>
+    <div class="image-container">
+        <img src="https://images.samsung.com/is/image/samsung/p6pim/levant/sm-a165fzaimea/gallery/levant-galaxy-a16-sm-a165-sm-a165fzaimea-thumb-544188019?$UX_EXT2_PNG$" alt="Item 4">
+        <button class="buy-button" onclick="buyNow('Item 4')">Buy Now</button>
+    </div>
+    <div class="image-container">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwL7YQkWsG0iu0xi75vzKe1kWkGfC643F69g&s" alt="Item 5">
+        <button class="buy-button" onclick="buyNow('Item 5')">Buy Now</button>
+    </div>
+    <div class="image-container">
+        <img src="https://sparx.pk/cdn/shop/files/Note-20-Elegant-Black.jpg?v=1721642461" alt="Item 6">
+        <button class="buy-button" onclick="buyNow('Item 6')">Buy Now</button>
+    </div>
+    <div class="image-container">
+        <img src="https://opsg-img-cdn-gl.heytapimg.com/epb/202412/19/AceLeaXtntKw1AZf.png "alt="Item 7">
+        <button class="buy-button" onclick="buyNow('Item 7')">Buy Now</button>
+    </div>
+    <div class="image-container">
+        <img src="https://media.wisemarket.com.pk/mobile-app/collection/product/vivo-y28-54.webp" alt="Item 8">
+        <button class="buy-button" onclick="buyNow('Item 8')">Buy Now</button>
+    </div>
+    <div class="image-container">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSNKuq63mPAnRMVEnylBfAiLI8rT-joKi14A&s" alt="Item 9">
+        <button class="buy-button" onclick="buyNow('Item 9')">Buy Now</button>
+    </div>
+    <div class="image-container">
+        <img src="https://media.wisemarket.com.pk/product/vivo-y100-47.webp" alt="Item 10">
+        <button class="buy-button" onclick="buyNow('Item 10')">Buy Now</button>
+    </div>
+</body>
+</html></div>

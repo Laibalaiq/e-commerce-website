@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessories</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            margin: 20px 0;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+            padding: 20px;
+        }
+        .item {
+            text-align: center;
+        }
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .buy-button {
+            margin-top: 10px;
+            padding: 8px 12px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .buy-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    
+    <button onclick="window.location.href='index.html'" style="margin: 20px; padding: 10px 20px;  color:#396594 ; border: none; cursor: pointer; position: absolute; left: 20px; top: 20px;">  &#8592;Back to Home</button>
+    <h1>Accessories Gallery</h1>
+    <div class="gallery">
+        <div class="item">
+            <img src="https://5.imimg.com/data5/SELLER/Default/2022/9/PB/NQ/GC/113400404/vembley-combo-of-4-gold-plated-chain-linked-chunky-bracelets-for-women-and-girls.jpg" alt="Accessory 1">
+            <button class="buy-button" onclick="buyNow('Accessory 1')">Buy Now</button>
+        </div>
+        <div class="item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgUCX9f0yh6KnQGgrFa1uxiCo5Zv-iUAlH5d3a_apvcD4Ov1qTioEEN3zc7XB_bWVLqdo&usqp=CAU" alt="Accessory 2">
+            <button class="buy-button" onclick="buyNow('Accessory 2')">Buy Now</button>
+        </div>
+        <div class="item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCMcx1-KWdmMzsJXCWID2mdT1xy9EhaqK3Vg&s" alt="Accessory 3">
+            <button class="buy-button" onclick="buyNow('Accessory 3')">Buy Now</button>
+        </div>
+        <div class="item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROI0MBHHvKRnC4DUj55UFBfp2qVwrWTBZF5A&s" alt="Accessory 4">
+            <button class="buy-button" onclick="buyNow('Accessory 4')">Buy Now</button>
+        </div>
+        <div class="item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4HK9qNhvmRhaUet_3Hauyy03c0SpYmfSZ-A&s" alt="Accessory 5">
+            <button class="buy-button" onclick="buyNow('Accessory 5')">Buy Now</button>
+        </div>
+        <div class="item">
+            <img src="https://alita.pk/cdn/shop/files/Milanbraclet_1024x.jpg?v=1716279249" alt="Accessory 6">
+            <button class="buy-button" onclick="buyNow('Accessory 6')">Buy Now</button>
+        </div>
+        <div class="item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlKxglwGko0A1Ys6HrdVDpdtrd7ICrnkEA9g&s" alt="Accessory 7">
+            <button class="buy-button" onclick="buyNow('Accessory 7')">Buy Now</button>
+        </div>
+        <div class="item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJtHiGnE1r6XTbdzdDc-9Mt-8A6a0sbN7jyw&s" alt="Accessory 8">
+            <button class="buy-button" onclick="buyNow('Accessory 8')">Buy Now</button>
+        </div>
+        <div class="item">
+            <img src="https://astore.pk/cdn/shop/files/13_15e5453b-a1c9-403c-90f4-9924fb652c60.jpg?v=1691421443" alt="Accessory 9">
+            <button class="buy-button" onclick="buyNow('Accessory 9')">Buy Now</button>
+        </div>
+        <div class="item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTo4DXAlSaRQBVn2pJDXPd8PhEzFwfQvEE3Sw&s" alt="Accessory 10">
+            <button class="buy-button" onclick="buyNow('Accessory 10')">Buy Now</button>
+        </div>
+    </div>
+
+    <script>
+        function buyNow(item) {
+            alert(`You have selected to buy ${item}.`);
+        }
+    </script>
+</body>
+</html>
